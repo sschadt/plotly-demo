@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Belly Button Biodiversity Dashboard</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <style>
+    body {
+      background-color: unset;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1>
+        Belly Button Biodiversity Dashboard
+      </h1>
+      <p>Use the interactive charts below to explore the dataset.</p>
+    </div>
+    <div class="row">
+      <div class="col-md-3">
+        <div class="panel panel-primary">
+          <div class="panel-body">Sample Patient</div>
+          <div class="sample-sidebar">
+              <select id="selSamples">
+              </select>
+              <table>
+                  <tr><td class="bold">AGE</td><td class="age"></td></tr>
+                  <tr><td class="bold">BBTYPE</td><td class="bbtype"></td></tr>
+                  <tr><td class="bold">ETHNICITY</td class="ethnicity"><td></td></tr>
+                  <tr><td class="bold">GENDER</td><td class="gender"></td></tr>
+                  <tr><td class="bold">LOCATION</td><td class="location"></td></tr>
+                  <tr><td class="bold">SAMPLEID</td><td class="sampleid"></td></tr>          
+              </table>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <i>Choose a sample patient from the dropdown to the left</i>
+          </div>
+          <div id="pie"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 bubble-chart">
+          <div id="bubble"></div>
+          <div id="gauge"></div>
+      </div>
+    </div>
+  </div>
+  <script src="{{ url_for('static', filename='js/plots.js') }}"></script>
+</body>
+
+</html>

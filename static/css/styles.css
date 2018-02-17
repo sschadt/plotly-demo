@@ -1,0 +1,28 @@
+
+
+.sample-sidebar td.bold { font-weight: bold;}
+
+.sample-sidebar table td { padding: .8em; }
+
+.sample-sidebar table.displayed { display: block; border: 1px solid gainsboro; width: 100%; }
+.sample-sidebar table { display: none; border: 1px solid gainsboro; width: 100%; }
+.panel-primary { border: 1px solid gray; }
+.panel-body { 
+    font-weight: bold;
+    background-color: #eee;
+    font-size: 1.6em;
+    color: #444;
+ }
+
+#selSamples {
+    width: 100%;
+    font-weight: bold;
+    height: 2.5em;
+    background-color: #398e39;
+    border: 1px solid gray;
+    color: #f0f1f0;
+    padding-left: .5em;
+    font-size: 1.2em;
+}
+
+.panel-default { border: 1px solid gray;}
