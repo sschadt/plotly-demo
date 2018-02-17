@@ -26,3 +26,5 @@
 }
 
 .panel-default { border: 1px solid gray;}
+
+div#gauge { margin-left: 25em; }
