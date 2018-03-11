@@ -2,6 +2,8 @@
 
 Interactive dashboard to explore the [Belly Button Biodiversity DataSet](http://robdunnlab.com/projects/belly-button-biodiversity/).
 
+See [hosted demo here](https://sleepy-earth-98949.herokuapp.com/).
+
 ## Step 1 - Flask app to expose endpoints
 
 Flask used to serve HTML and JavaScript for dashboard page. SQLite database / SQLAlchemy used to output the data as JSON in four different routes.
